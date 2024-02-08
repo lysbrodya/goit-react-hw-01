@@ -1,15 +1,9 @@
-export const Profile = ({
-  username,
-  tag,
-  location,
-  avatar = "https://cdn-icons-png.flaticon.com/512/2922/2922506.png",
-  stats,
-}) => {
+export const Profile = ({ name, tag, location, image, stats }) => {
   return (
     <div>
       <div>
-        <img src={avatar} alt="avatar" />
-        <p>{username}</p>
+        <img src={image} alt={name} />
+        <p>{name}</p>
         <p>{tag}</p>
         <p>{location}</p>
       </div>
