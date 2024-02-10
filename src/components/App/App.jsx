@@ -1,7 +1,7 @@
 // src/App.jsx
-import { Profile } from "./Profile";
+import { Profile } from "../Profile/Profile.jsx";
 
-import { username, tag, location, avatar, stats } from "../userData.json";
+import { username, tag, location, avatar, stats } from "../../userData.json";
 export const App = () => {
   return (
     <>
