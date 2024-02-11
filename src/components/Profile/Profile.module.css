@@ -1,14 +1,19 @@
 .conteiner {
-  margin: 20px 650px;
+  /* margin: 20px 650px; */
+  max-width: 300px;
   border: 3px solid black;
   text-align: center;
   border-radius: 7px;
+  margin: auto;
+  margin-top: 20px;
 }
 .list {
   display: flex;
   justify-content: center;
-  margin: -1px;
+  /* margin: -1px; */
   margin-top: 10px;
+  width: 100%;
+  padding: 0px;
 }
 .avatar {
   border-radius: 100%;
@@ -29,7 +34,8 @@
   font-size: large;
   font-weight: bold;
 }
-.item:nth-child(2n) {
+.item:last-child,
+.item:first-child {
   border-left: 0px;
   border-right: 0px;
 }
