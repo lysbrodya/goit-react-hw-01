@@ -1,0 +1,6 @@
+.isOnline:last-child {
+  color: green;
+}
+.isOfline:last-child {
+  color: red;
+}
