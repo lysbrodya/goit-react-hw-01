@@ -1,3 +1,5 @@
+import css from "../TransactionHistory/TransactionHistory.module.css";
+import clsx from "clsx";
 export const TransactionHistory = ({ items }) => {
   return (
     <table>
@@ -9,11 +11,13 @@ export const TransactionHistory = ({ items }) => {
         </tr>
       </thead>
 
-      <tbody>
-        {items.map((item) => {
+      <tbody className={css.stringColor}>
+        {items.map(function fn(item) {
           return (
-            <tr key={item.id}>
-              <td key={item.id + item.tipe}>{item.type}</td>
+            <tr key={item.id} className={css.stringColor}>
+              <td key={item.id + item.type} className={css.firstLatter}>
+                {item.type}
+              </td>
               <td key={item.id + item.amount}>{item.amount}</td>
               <td key={item.id + item.currency}>{item.currency}</td>
             </tr>
