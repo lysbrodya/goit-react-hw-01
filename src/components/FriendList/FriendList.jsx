@@ -1,6 +1,6 @@
 import { FriendListItem } from "../FriendListItem/FriendListItem";
 import css from "./FriendList.module.css";
-export const FriendList = ({ friends }) => {
+export default function FriendList({ friends }) {
   return (
     <>
       <ul className={css.friendList}>
@@ -16,4 +16,4 @@ export const FriendList = ({ friends }) => {
       </ul>
     </>
   );
-};
+}

@@ -1,5 +1,5 @@
 import css from "../Profile/Profile.module.css";
-export const Profile = ({ name, tag, location, image, stats }) => {
+export default function Profile({ name, tag, location, image, stats }) {
   return (
     <div className={css.conteiner}>
       <div>
@@ -25,4 +25,4 @@ export const Profile = ({ name, tag, location, image, stats }) => {
       </ul>
     </div>
   );
-};
+}
