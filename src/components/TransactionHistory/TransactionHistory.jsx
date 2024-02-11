@@ -1,4 +1,4 @@
-import css from "../TransactionHistory/TransactionHistory.module.css";
+import css from "./TransactionHistory.module.css";
 export default function TransactionHistory({ items }) {
   return (
     <table>
@@ -14,11 +14,9 @@ export default function TransactionHistory({ items }) {
         {items.map(function fn(item) {
           return (
             <tr key={item.id} className={css.stringColor}>
-              <td key={item.id + item.type} className={css.firstLatter}>
-                {item.type}
-              </td>
-              <td key={item.id + item.amount}>{item.amount}</td>
-              <td key={item.id + item.currency}>{item.currency}</td>
+              <td className={css.firstLatter}>{item.type}</td>
+              <td>{item.amount}</td>
+              <td>{item.currency}</td>
             </tr>
           );
         })}

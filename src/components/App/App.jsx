@@ -1,5 +1,3 @@
-// src/App.jsx
-
 import friends from "../../friends.json";
 import transactions from "../../transactions.json";
 import { username, tag, location, avatar, stats } from "../../userData.json";

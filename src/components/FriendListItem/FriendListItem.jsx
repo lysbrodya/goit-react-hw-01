@@ -8,7 +8,6 @@ export const FriendListItem = ({ avatar, name, isOnline }) => {
       <p className={clsx(css.status, isOnline ? css.isOnline : css.isOfline)}>
         {isOnline ? "Online" : "Ofline"}
       </p>
-      {/* {isOnline ? <p>isOnline</p> : <p>isOfline</p>} */}
     </div>
   );
 };
